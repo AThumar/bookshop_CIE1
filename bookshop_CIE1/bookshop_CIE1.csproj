@@ -108,6 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Admin\AdminPageM.Master.cs">
+      <DependentUpon>AdminPageM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\AdminPageM.Master.designer.cs">
+      <DependentUpon>AdminPageM.Master</DependentUpon>
+    </Compile>
     <Compile Include="Views\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,6 +150,7 @@
     <Content Include="Assets\Library\css\bootstrap.rtl.css.map" />
     <Content Include="Assets\Library\css\bootstrap.rtl.min.css.map" />
     <None Include="packages.config" />
+    <Content Include="Views\Admin\AdminPageM.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -152,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Admin\" />
     <Folder Include="Views\Seller\" />
     <Folder Include="Views\User\" />
   </ItemGroup>

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPageM.master.cs" Inherits="bookshop_CIE1.Views.Admin.AdminPageM" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../../Assets/Library/css/bootstrap.min.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 bg-teal">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg"/>
+                            </div>
+                            <div class="col-10">
+                                <title>Books</title>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-9">
+
+                    </div>
+                </div>
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
