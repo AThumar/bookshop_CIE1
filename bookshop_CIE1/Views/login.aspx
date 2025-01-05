@@ -18,16 +18,24 @@
             </div>
             <div class="col-md-4">
                 <form id="form1" runat="server">
-                    <div>
-                        <img src="../Assets/Image/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg"/>
+                    <div >
+                        <div class="row"> 
+                            <div class="col"></div>
+                            
+                            <div class="col">
+                               <img src="../Assets/Image/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg " />
+
+                            </div>
+
+                        </div>
                     </div>
                     <div class="mt-4">
-                        <label for="" class="form-lebel">User Name</label>
+                        <label for="" class="form-lebel">User Name</label><br />
                         <input type="text" placeholder="Username" autocomplete="off" class="form - control"/>
                      </div>
                     
                     <div class="mt-4">
-                        <label for="" class="form-lebel">Password</label>
+                        <label for="" class="form-lebel">Password</label><br />
                         <input type="Password" placeholder="Password" autocomplete="off" class="form - control"/>
                      </div>
                     <div class="mt-4 d-grid" >
