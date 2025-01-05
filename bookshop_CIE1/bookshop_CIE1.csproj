@@ -67,12 +67,81 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Image\360_F_314850659_2aQLerz30kWj78tqpaGSbzYD6sAUmuDf.jpg" />
+    <Content Include="Assets\Image\360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" />
+    <Content Include="Assets\Image\book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg" />
+    <Content Include="Assets\Image\bookshop_CIE1.sln" />
+    <Content Include="Assets\Image\calendar-calendar-icon-calendar-icon-simple-sign-calendar-symbol-free-vector.jpg" />
+    <Content Include="Assets\Image\cancel-logo-icon-sign-symbol-design-free-vector.jpg" />
+    <Content Include="Assets\Image\category-18.png" />
+    <Content Include="Assets\Image\download %281%29.png" />
+    <Content Include="Assets\Image\download %282%29.png" />
+    <Content Include="Assets\Image\download %283%29.png" />
+    <Content Include="Assets\Image\download %284%29.png" />
+    <Content Include="Assets\Image\download.png" />
+    <Content Include="Assets\Image\location-56.png" />
+    <Content Include="Assets\Image\sm_5afc76eed0142.jpg" />
+    <Content Include="Assets\Library\css\bootstrap-grid.css" />
+    <Content Include="Assets\Library\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\Library\css\bootstrap-grid.rtl.css" />
+    <Content Include="Assets\Library\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.css" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.css" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.min.css" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Assets\Library\css\bootstrap.css" />
+    <Content Include="Assets\Library\css\bootstrap.min.css" />
+    <Content Include="Assets\Library\css\bootstrap.rtl.css" />
+    <Content Include="Assets\Library\css\bootstrap.rtl.min.css" />
+    <Content Include="Assets\Library\js\bootstrap.bundle.js" />
+    <Content Include="Assets\Library\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\Library\js\bootstrap.esm.js" />
+    <Content Include="Assets\Library\js\bootstrap.esm.min.js" />
+    <Content Include="Assets\Library\js\bootstrap.js" />
+    <Content Include="Assets\Library\js\bootstrap.min.js" />
+    <Content Include="Views\login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Image\billing-machine-3734463-3113745.webp" />
+    <Content Include="Assets\Image\business-user-cog_78370-7040.avif" />
+    <Content Include="Assets\Image\graph-icon-trendy-flat-style-600nw-407313520.webp" />
+    <Content Include="Assets\Library\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\Library\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\Library\js\bootstrap.esm.js.map" />
+    <Content Include="Assets\Library\js\bootstrap.esm.min.js.map" />
+    <Content Include="Assets\Library\js\bootstrap.js.map" />
+    <Content Include="Assets\Library\js\bootstrap.min.js.map" />
+    <Content Include="Assets\Library\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Assets\Library\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap.css.map" />
+    <Content Include="Assets\Library\css\bootstrap.min.css.map" />
+    <Content Include="Assets\Library\css\bootstrap.rtl.css.map" />
+    <Content Include="Assets\Library\css\bootstrap.rtl.min.css.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -82,7 +151,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Seller\" />
