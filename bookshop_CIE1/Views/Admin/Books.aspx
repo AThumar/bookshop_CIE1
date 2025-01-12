@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-md-8">
-
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
             </div>
         </div>
     </div>

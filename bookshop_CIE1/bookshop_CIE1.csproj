@@ -103,6 +103,7 @@
     <Content Include="Assets\Library\js\bootstrap.esm.min.js" />
     <Content Include="Assets\Library\js\bootstrap.js" />
     <Content Include="Assets\Library\js\bootstrap.min.js" />
+    <Content Include="Views\Admin\Author.aspx" />
     <Content Include="Views\Admin\Books.aspx" />
     <Content Include="Views\login.aspx" />
     <Content Include="Web.config" />
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="Views\Admin\AdminPageM.Master.designer.cs">
       <DependentUpon>AdminPageM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Author.aspx.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Author.aspx.designer.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Books.aspx.cs">
       <DependentUpon>Books.aspx</DependentUpon>
