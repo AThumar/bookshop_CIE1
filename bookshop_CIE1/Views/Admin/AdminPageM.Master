@@ -5,6 +5,20 @@
 <html>
 <head runat="server">
     <title></title>
+    <style>
+        {
+            font-family:Poppins ;
+        }
+        #left{
+            color : white;
+            height : 695px;
+            background-color:teal;
+        }
+        label{
+                        color: white;
+        
+        }
+    </style>
     <link href="../../Assets/Library/css/bootstrap.min.css" rel="stylesheet"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,19 +28,23 @@
         <div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-3 bg-teal">
+                    <div class="col-3 bg-teal" id="left">
+                        <div style="height:30px"></div>
                         <div class="row">
                             <div class="col-2">
-                                <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg"/>
+                                
+                              
+                                <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
+                                  <a href="#">Books</a>
                             </div>
-                            <div class="col-10">
-                                <title>Books</title>
+                            <div class="col-2">
+                                <h4>Books</h4>
 
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-8">
 
                     </div>
                 </div>
