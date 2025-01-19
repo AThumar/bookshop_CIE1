@@ -105,6 +105,7 @@
     <Content Include="Assets\Library\js\bootstrap.min.js" />
     <Content Include="Views\Admin\Author.aspx" />
     <Content Include="Views\Admin\Books.aspx" />
+    <Content Include="Views\Admin\Categories.aspx" />
     <Content Include="Views\Admin\seller.aspx" />
     <Content Include="Views\login.aspx" />
     <Content Include="Web.config" />
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="Views\Admin\Books.aspx.designer.cs">
       <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\seller.aspx.cs">
       <DependentUpon>seller.aspx</DependentUpon>
