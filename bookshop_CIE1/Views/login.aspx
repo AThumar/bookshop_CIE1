@@ -31,15 +31,15 @@
                     </div>
                     <div class="mt-4">
                         <label for="" class="form-lebel">User Name</label><br />
-                        <input type="text" placeholder="Username" autocomplete="off" class="form - control"/>
+                        <input type="text" placeholder="Username" autocomplete="off" class="form - control" id="name"/>
                      </div>
                     
                     <div class="mt-4">
                         <label for="" class="form-lebel">Password</label><br />
-                        <input type="Password" placeholder="Password" autocomplete="off" class="form - control"/>
+                        <input type="Password" placeholder="Password" autocomplete="off" class="form - control" id="password"/>
                      </div>
                     <div class="mt-4 d-grid" >
-                        <asp:Button  Text="Login" runat="server" CssClass="btn-success btn" />
+                        <asp:Button  Text="Login" runat="server" CssClass="btn-success btn" id="loginbtn" OnClick="loginbtn_Click"/>
 
                     </div>
                     
