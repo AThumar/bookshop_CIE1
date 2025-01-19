@@ -45,7 +45,6 @@
 </div>
   
 
-<asp:Label ID="Label1" runat="server" Text="Your selection will appear here."></asp:Label>
 
                 
             <div class="row">
