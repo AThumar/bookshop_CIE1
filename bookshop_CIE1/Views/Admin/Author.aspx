@@ -10,28 +10,43 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">
-                    
-                        <label for="" class="form-lebel text-success">Author Name</label><br />
-                        <input type="text" placeholder="Author Name" autocomplete="off" class="form - control"/>
+                    <label for="" class="form-lebel text-success">Author Name</label><br />
+                    <input type="text" placeholder="Author Name" autocomplete="off" class="form - control"/>
                 </div>
                 <div class="mb-3">
     
-        <label for="" class="form-lebel text-success">Book Gender</label><br />
-                            <asp:DropDownList ID="DropDownList2" runat="server" class="form - control"></asp:DropDownList>
+        <label for="" class="form-lebel text-success">Author Gender</label><br />
+<asp:DropDownList ID="DropDownList2" runat="server" class="form - control">
+                <asp:ListItem Text="Select a Gender" Value="" />
+
+    <asp:ListItem >Male</asp:ListItem>
+        <asp:ListItem >Female</asp:ListItem>
+
+</asp:DropDownList>
+
 
 </div>
                                 <div class="mb-3">
     
         <label for="" class="form-lebel text-success">Country</label><br />
-        <asp:DropDownList ID="DropDownList1" runat="server" class="form - control"></asp:DropDownList>
-                                    <asp:listItem>India</asp:listItem>
-                                                                        <asp:listItem>UK</asp:listItem>
+        <asp:DropDownList ID="DropDownList1" runat="server" class="form - control">
+            <asp:ListItem Text="Select a country" Value="" />
+            <asp:ListItem Text="Bangladesh" Value="1" />
+            <asp:ListItem Text="India" Value="2" />
+            <asp:ListItem Text="Pakistan" Value="3" />
+            <asp:ListItem Text="Sri Lanka" Value="4" />
+            <asp:ListItem Text="Nepal" Value="5" />
+            <asp:ListItem Text="Bhutan" Value="6" />
+        </asp:DropDownList>
 
-                                                                        <asp:listItem>USA</asp:listItem>
 
-                                                                        <asp:listItem>France</asp:listItem>
+
 
 </div>
+  
+
+<asp:Label ID="Label1" runat="server" Text="Your selection will appear here."></asp:Label>
+
                 
             <div class="row">
             <div class="col d-grid"><asp:Button  Text="Update" runat="server" CssClass="btn-warning btn-block btn" /></div>
