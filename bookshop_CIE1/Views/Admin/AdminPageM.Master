@@ -1,22 +1,131 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPageM.master.cs" Inherits="bookshop_CIE1.Views.Admin.AdminPageM" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <style>
-        {
-            font-family:Poppins ;
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        #left{
-            color : white;
-            height : 695px;
-            background-color:teal;
+
+        #left {
+            background: linear-gradient(135deg, #008080 0%, #006666 100%);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            width: inherit;
+            max-width: inherit;
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        label{
-                        color: white;
-        
+
+        .sidebar-brand {
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-brand h2 {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            margin: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .sidebar-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+        }
+
+        .sidebar-item img {
+            height: 24px;
+            width: 24px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .sidebar-item label {
+            color: white;
+            margin-left: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .main-content {
+            margin-left: 25%;
+            padding: 30px;
+            width: 75%;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+
+        .top-bar {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .page-title {
+            font-size: 24px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Active state for sidebar items */
+        .sidebar-item.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #008080;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #006666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #left {
+                width: 70px;
+            }
+            
+            .sidebar-item label {
+                display: none;
+            }
+            
+            .main-content {
+                margin-left: 70px;
+                width: calc(100% - 70px);
+            }
         }
     </style>
     <link href="../../Assets/Library/css/bootstrap.min.css" rel="stylesheet"/>
@@ -25,48 +134,43 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-3 bg-teal" id="left">
-                        <div style="height:120px"></div>
-                        
-                           <div class="p-2">
-                               
-                            <div class="mb-3">
-                                <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
-                                  <a href="#"><label>Books</label></a>
-                                                           <div class="mb-3">
-    <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
-      <a href="#"><label>Author</label></a>
-</div>
-                          
-                            <div class="mb-3">
-    <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
-      <a href="#"><label>Seller</label></a>
-</div>
-                          
-                            <div class="mb-3">
-    <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
-      <a href="#"><label>Categories</label></a>
-</div>
-                          
-                            <div class="mb-3">
-    <img src="../../Assets/Image/360_F_777575376_Z14u1CGxwn2WSw2NgiE2Nd1gutZQtkm6.jpg" height="40" width="40"/>
-      <a href="#"><label>Log-Out</label></a>
-</div>                    
-                           </div>
-                            
-                        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-3" id="left">
+                    <div class="sidebar-brand">
+                        <h2>BookShop</h2>
                     </div>
-                    <div class="col-8">
-
+                    <div class="sidebar-item active">
+                        <i class="fas fa-book fa-lg" style="color: white;"></i>
+                        <a href="#"><label>Books</label></a>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-user-edit fa-lg" style="color: white;"></i>
+                        <a href="#"><label>Author</label></a>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-store fa-lg" style="color: white;"></i>
+                        <a href="#"><label>Seller</label></a>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-tags fa-lg" style="color: white;"></i>
+                        <a href="#"><label>Categories</label></a>
+                    </div>
+                    <div class="sidebar-item" style="margin-top: auto;">
+                        <i class="fas fa-sign-out-alt fa-lg" style="color: white;"></i>
+                        <a href="#"><label>Log-Out</label></a>
                     </div>
                 </div>
-
+                <!-- Main Content -->
+                <div class="col-9 main-content">
+                    <div class="top-bar">
+                        <h1 class="page-title">Dashboard</h1>
+                    </div>
+                    <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
-            <asp:ContentPlaceHolder ID="MyContent" runat="server">
-            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
