@@ -11,12 +11,12 @@
             <div class="col-md-4">
                 <div class="mb-3">
                     <label for="" class="form-lebel text-success">Author Name</label><br />
-                    <input type="text" placeholder="Author Name" autocomplete="off" class="form - control"/>
+                    <input type="text" placeholder="Author Name" autocomplete="off" class="form - control" runat="server" id="ANameTb"/>
                 </div>
                 <div class="mb-3">
     
         <label for="" class="form-lebel text-success">Author Gender</label><br />
-<asp:DropDownList ID="DropDownList2" runat="server" class="form - control">
+<asp:DropDownList  runat="server" class="form - control " id="GenCb">
                 <asp:ListItem Text="Select a Gender" Value="" />
 
     <asp:ListItem >Male</asp:ListItem>
@@ -29,7 +29,7 @@
                                 <div class="mb-3">
     
         <label for="" class="form-lebel text-success">Country</label><br />
-        <asp:DropDownList ID="DropDownList1" runat="server" class="form - control">
+        <asp:DropDownList ID="CountryCb" runat="server" class="form - control">
             <asp:ListItem Text="Select a country" Value="" />
             <asp:ListItem Text="Bangladesh" Value="1" />
             <asp:ListItem Text="India" Value="2" />
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                <asp:GridView ID="AuthorsList" runat="server"></asp:GridView>
             </div>
         </div>
     </div>
