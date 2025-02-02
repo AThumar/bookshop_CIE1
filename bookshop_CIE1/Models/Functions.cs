@@ -30,5 +30,14 @@ namespace bookshop_CIE1.Models
             sda.Fill(dt);
             return dt;
         }
+        public int SetData(string query)
+        {
+            int cnt = 0;
+            if (con.State == ConnectionState.Closed) { con.Open(); }
+            cmd.CommandText = query;
+            cnt = cmd.ExecuteNonQuery();
+            con.Close();
+            return cnt;
+        }
     }
 }
