@@ -48,9 +48,10 @@
 
                 
             <div class="row">
-            <div class="col d-grid"><asp:Button  Text="Update" runat="server" CssClass="btn-warning btn-block btn" /></div>
-            <div class="col d-grid"><asp:Button  Text="Save" runat="server" CssClass="btn-success btn-block btn" /></div>
-            <div class="col d-grid"><asp:Button  Text="Delete" runat="server" CssClass="btn-danger btn-block btn" /></div>
+                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
+            <div class="col d-grid"><asp:Button  Text="Update" runat="server" ID="EditBtn" CssClass="btn-warning btn-block btn" /></div>
+            <div class="col d-grid"><asp:Button  Text="Save" runat="server" ID="SaveBtn" CssClass="btn-success btn-block btn" OnClick="SaveBtn_Click" /></div>
+<asp:Button Text="Delete" runat="server" id="DeleteBtn" CssClass="btn-danger btn-block btn" />
                 </div>
             </div>
             <div class="col-md-8">

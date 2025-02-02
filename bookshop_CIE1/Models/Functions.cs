@@ -16,8 +16,11 @@ namespace bookshop_CIE1.Models
         private string ConStr;
 
 
-        public Functions() { 
-            ConStr = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ayush\\OneDrive\\Documents\\BookShop.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True";
+        public Functions() {
+            ConStr = @"Data Source=(localdb)\ProjectModels; Initial Catalog=BookShop; Integrated Security=True";
+            
+
+       
             con = new SqlConnection(ConStr);
             cmd = new SqlCommand();
             cmd.Connection = con;
